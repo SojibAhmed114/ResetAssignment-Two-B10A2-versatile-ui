@@ -4,6 +4,83 @@
     box-sizing: border-box;
 }
 body{
+    max-width: 1440px;
+    /* border: 1px solid white; */
+    margin: 0 auto;
     font-family: "Inter", sans-serif;
+    background-color: #000000;
     /* font-family: "Fleur De Leah", cursive; */
+}
+
+/* common style  */
+.display-flex{
+    display: flex;
+}
+.tab-btn{
+    background-color: #e6533c;
+    color: white;
+    font-weight: 600;
+    font-size: 1.125rem;
+    padding: 8px 20px;
+    border-radius: 46px;
+}
+/* common style end */
+header{
+    max-width: 1070px;
+    margin: 50px auto;
+    padding: 0 5px;
+    /* border: 1px solid white; */
+}
+.mainNav{
+    align-items: center;
+    justify-content: space-between;
+
+}
+.tabContainer{
+    display: flex;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 39px;
+
+}
+.nav-title{
+    color:  #e6533c;
+    font-weight: 800;
+    font-size: 2.25rem;
+}
+.listContainer{
+    display: flex;
+    gap: 47px;
+    
+}
+.list-content{
+    list-style: none;
+    padding: 15px;
+}
+.item-link{
+    text-decoration: none;
+    color: white;
+}
+
+.nav-menu{
+    width: 20px;
+    display: none;
+}
+
+
+
+/* mobile screen responsive design here  */
+@media screen and (max-width: 576px) {
+    
+    header{
+        margin: 10px auto;
+    }
+    .tabContainer{
+        border: none;
+    }
+    .listContainer{
+        display: none;
+    }
+    .nav-menu{
+        display: block;
+    }
 }
