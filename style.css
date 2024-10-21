@@ -5,11 +5,10 @@
 }
 body{
     max-width: 1440px;
-    /* border: 1px solid white; */
     margin: 0 auto;
     font-family: "Inter", sans-serif;
-    background-color: #000000;
-    /* font-family: "Fleur De Leah", cursive; */
+    /* background: rgb(0,0,0); */
+    background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgb(43, 43, 43) 50%, rgb(0, 0, 0) 100%);
 }
 
 /* common style  */
@@ -23,12 +22,26 @@ body{
     font-size: 1.125rem;
     padding: 8px 20px;
     border-radius: 46px;
+    border: none;
+}
+.common-btn{
+    background-color: #e6533c;
+    color: white;
+    font-weight: 600;
+    font-size: 1.125rem;
+    padding: 16px 40px;
+    border-radius: 46px;
+    border: none;
+}
+.section-description{
+    color: #ffffff80;
 }
 /* common style end */
 header{
     max-width: 1070px;
     margin: 50px auto;
     padding: 0 5px;
+    /* background: linear-gradient(180deg, rgb(17, 17, 17),rgba(119, 119, 119, 0) 100%); */
     /* border: 1px solid white; */
 }
 .mainNav{
@@ -67,7 +80,24 @@ header{
 }
 
 
-
+/* hero section start here  */
+.heroSection{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+}
+.heroTitle{
+    color: white;
+    font-weight: 900;
+    font-size: 4.875rem;
+}
+.heroTitelDesign{
+    font-family: "Fleur De Leah", cursive;
+}
+.third-btn{
+    background-color: transparent;
+    border: 1px solid white;
+}
 /* mobile screen responsive design here  */
 @media screen and (max-width: 576px) {
     
@@ -82,5 +112,10 @@ header{
     }
     .nav-menu{
         display: block;
+    }
+
+    .heroSection{
+        grid-template-columns: repeat(1, 1fr);
+        align-items: center;
     }
 }
