@@ -323,6 +323,41 @@ tbody{
     background-image: url('./assets/trainer6.png');
     background-size: cover;
 }
+/* meet our team section end here  */
+
+/* footer section start here  */
+footer{
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 40px 0;
+}
+.footerContainer{
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: end;
+    padding-bottom: 80px;
+}
+.footer-title{
+    font-size: 2rem;
+    font-weight: 700;
+    color: white;
+    margin-bottom: 40px;
+}
+.footerListItem{
+    list-style: none;
+    margin-bottom: 20px;
+}
+.footerlink{
+    color:  rgba(255, 255, 255, 0.5);
+    text-decoration: none;
+    font-size: 1.438rem;
+}
+.footerLastLine{
+    text-align: center;
+    margin: 20px 0;
+    color: rgba(255, 255, 255, 0.5);
+}
+/* footer section end here  */
 
 
 /* mobile screen responsive design here  */
@@ -347,6 +382,12 @@ tbody{
     .meetPhotoContaier
     {
         grid-template-columns: repeat(1, 1fr);
+    }
+
+    .footerContainer{
+        grid-template-columns: repeat(1, 1fr);
+        justify-items: start;
+        margin: 0 10px;
     }
 
     .third-btn{
@@ -378,5 +419,5 @@ tbody{
         flex-direction: column;
     }
 
-    
+
 }
