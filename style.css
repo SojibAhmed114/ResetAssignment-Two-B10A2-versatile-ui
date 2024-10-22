@@ -214,6 +214,52 @@ main{
 }
 /* run section end  */
 
+/* bmi section start here  */
+.bmi-title-section{
+    text-align: left;
+    margin-bottom: 80px;
+}
+.BMI-container{
+    background-color: rgb(34, 34, 34);
+    padding: 52px 0;
+
+}
+
+.myBmiContainer{
+    gap: 150px;
+}
+
+.sectionTitleTwo{
+    color: white;
+    font-size: 1.75rem;
+    font-weight: 900;
+}
+.bmi-table,tr,td, th{
+    border: 1px solid rgba(255, 255, 255, 0.3) ;
+    border-collapse: collapse;
+    padding: 14px 20px;
+    text-align: left;
+    margin-top: 52px;
+}
+thead{
+    font-weight: 600;
+    color: white;
+}
+tbody{
+    color: rgba(255, 255, 255, 0.5);
+}
+
+/* #formcontent{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    justify-content: space-between;
+} */
+/* bmi section end here  */
+
+
+
+
+
 /* mobile screen responsive design here  */
 @media screen and (max-width: 576px) {
     
