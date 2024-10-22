@@ -46,7 +46,7 @@ header{
     background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgb(43, 43, 43) 50%, rgb(0, 0, 0) 100%);
 }
     
-.problem{
+.headerDiv{
     max-width: 1070px;
     margin: 50px auto;
     padding: 0 5px;
@@ -167,11 +167,7 @@ header{
 /* header section end here  */
 
 /* main section start here  */
-main{
-    max-width: 1440px;
-    margin: 0 auto;
-    padding: 0 5px;
-}
+
 
 /* habit section  */
 .habit-section{
@@ -249,15 +245,84 @@ tbody{
     color: rgba(255, 255, 255, 0.5);
 }
 
-/* #formcontent{
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
+
+.CalculateContent{
+    flex: 1;
+}
+
+
+.input-group{
+    display: flex;
     justify-content: space-between;
-} */
+    margin-bottom: 10px;
+}
+.input-group input, .input-group select{
+    background-color: rgba(255, 255, 255, 0.1);
+    border: none;
+    border-radius: 8px;
+    color: white;
+    padding: 12px 20px;
+    width: 48%;
+}
+
+.full-width-input {
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.1);
+    border: none;
+    border-radius: 8px;
+    color: white;
+    padding: 12px 20px;
+    margin-bottom: 10px;
+}
 /* bmi section end here  */
 
-
-
+/* meet out team section start here  */
+.meetPhotoContaier{
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    place-items: center;
+    border-radius: 18px;
+}
+.photoContent{
+    border-radius: 18px;
+    height: 272px;
+    width: 100%;
+    display: flex;
+    color: white;
+    padding: 10px;
+    justify-content: flex-end;
+    flex-direction: column;
+    background-color: #0000007d;
+    background-blend-mode: overlay;
+    
+}
+.meetphoto1{
+    background-image: url('./assets/trainer1.png');
+    background-size: cover;
+}
+.meetphoto2{
+    background-image: url('./assets/trainer2.png');
+    background-size: cover;
+}
+.meetphoto3{
+    background-image: url('./assets/trainer3.png');
+    background-size: cover;
+}
+.meetphoto4{
+    background-image: url('./assets/trainer4.png');
+    background-size: cover;
+}
+.meetphoto5{
+    background-image: url('./assets/trainer5.png');
+    background-size: cover;
+}
+.meetphoto6{
+    background-image: url('./assets/trainer6.png');
+    background-size: cover;
+}
 
 
 /* mobile screen responsive design here  */
@@ -276,15 +341,17 @@ tbody{
         display: block;
     }
 
-    .heroSection, .habitCardContainer{
+
+    .heroSection,
+    .habitCardContainer,
+    .meetPhotoContaier
+    {
         grid-template-columns: repeat(1, 1fr);
-        align-items: center;
-        justify-content: center;
     }
 
     .third-btn{
         margin-left: 5px;
-    }
+    } 
 
     .common-btn{
         padding: 16px 32px;
@@ -296,7 +363,7 @@ tbody{
     .imgTitleBox-position2{
         bottom: 100px;
     }
-    .run-section{
+    .run-section {
         padding: 32px;
         flex-direction: column;
         gap: 30px;
@@ -305,4 +372,11 @@ tbody{
     .btn-width, .img-width{
         width: 100%;
     }
+
+    .myBmiContainer{
+        gap: 50px;
+        flex-direction: column;
+    }
+
+    
 }
