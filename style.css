@@ -35,8 +35,11 @@ body{
 }
 .section-description{
     color: #ffffff80;
+    margin: 16px 0;
 }
 /* common style end */
+
+/* nav section start here  */
 header{
     max-width: 1070px;
     margin: 50px auto;
@@ -85,11 +88,26 @@ header{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
+    justify-content:space-between;
+    gap: 60px;
+}
+
+.heroTitleContainer{
+    max-width: 520px;
+}
+.heroImgContainer{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+
 }
 .heroTitle{
     color: white;
     font-weight: 900;
     font-size: 4.875rem;
+    margin-bottom: 16px;
 }
 .heroTitelDesign{
     font-family: "Fleur De Leah", cursive;
@@ -97,7 +115,54 @@ header{
 .third-btn{
     background-color: transparent;
     border: 1px solid white;
+    margin-left: 16px;
 }
+
+.heroImg{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right;
+}
+.imgTitleBox{
+    color: white;
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 16px 24px;
+    width: 200px;
+    border-radius: 12px;
+}
+.imgTitleBox-position1{
+    position: absolute;
+    right: 0;
+    top: 200px;
+}
+.imgTitleBox-position2{
+    position: absolute;
+    bottom: 50px;
+}
+.imgTitle{
+    font-size: 2.5rem;
+    font-weight: 900;
+}
+.imgdescription{
+    font-size: 0.813rem;
+    color: #ffffffa6;
+}
+.circle{
+    height: 36px;
+    width: 36px;
+    border-radius: 50%;
+    background: rgb(230, 83, 60);
+}
+.flex-style{
+    align-items: center;
+    gap: 12px;
+}
+
+
+
+
 /* mobile screen responsive design here  */
 @media screen and (max-width: 576px) {
     
