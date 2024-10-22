@@ -227,7 +227,6 @@ header{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
-    
 }
 
 .priceCard{
@@ -237,6 +236,21 @@ header{
     background-color: rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(10px);
     border-radius: 12px;
+}
+.hover1:hover{
+    background-image: linear-gradient(to top, #0000009b, #000000b1), url('./assets/gymhover1.jpg');
+    background-position: center;
+    background-size: cover;
+}
+.hover2:hover{
+    background-image: linear-gradient(to top, #0000009b, #000000b1), url('./assets/gymhover2.jpg');
+    background-position: center;
+    background-size: cover;
+}
+.hover3:hover{
+    background-image: linear-gradient(to top, #0000009b, #000000b1), url('./assets/gymhover3.jpg');
+    background-position: center;
+    background-size: cover;
 }
 .textBorder{
     padding-bottom: 15px;
