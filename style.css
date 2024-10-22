@@ -4,11 +4,8 @@
     box-sizing: border-box;
 }
 body{
-    max-width: 1440px;
-    margin: 0 auto;
     font-family: "Inter", sans-serif;
-    /* background: rgb(0,0,0); */
-    background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgb(43, 43, 43) 50%, rgb(0, 0, 0) 100%);
+    background: #000000;
 }
 
 /* common style  */
@@ -33,6 +30,11 @@ body{
     border-radius: 46px;
     border: none;
 }
+.section-title{
+    font-size: 3rem;
+    font-weight: 900;
+    color: #ffffff;
+}
 .section-description{
     color: #ffffff80;
     margin: 16px 0;
@@ -41,11 +43,13 @@ body{
 
 /* nav section start here  */
 header{
+    background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgb(43, 43, 43) 50%, rgb(0, 0, 0) 100%);
+}
+    
+.problem{
     max-width: 1070px;
     margin: 50px auto;
     padding: 0 5px;
-    /* background: linear-gradient(180deg, rgb(17, 17, 17),rgba(119, 119, 119, 0) 100%); */
-    /* border: 1px solid white; */
 }
 .mainNav{
     align-items: center;
@@ -123,11 +127,12 @@ header{
     background-size: cover;
     background-position: right;
 }
+
 .imgTitleBox{
     color: white;
     background-color: rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(20px);
-    border: 1px solid rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
     padding: 16px 24px;
     width: 200px;
     border-radius: 12px;
@@ -159,9 +164,55 @@ header{
     align-items: center;
     gap: 12px;
 }
+/* header section end here  */
+
+/* main section start here  */
+main{
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 5px;
+}
+
+/* habit section  */
+.habit-section{
+    max-width: 1070px;
+    margin: 50px auto;
+}
+.habitContent{
+    text-align: center;
+    max-width: 671px;
+    margin: 0 auto;
+}
+
+.habitCardContainer{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    text-align: center;
+    margin-top: 56px;
+}
+.habit-img{
+    border-radius: 50%;
+    border: 1px solid rgb(176, 176, 176);
+}
+.card-title{
+    font-size: 1.125rem;
+    color: white;
+    font-weight: 600;
+}
 
 
-
+/* run section start here  */
+.run-section{
+    background-color: rgb(34, 34, 34);
+    padding: 30px 30px 30px 50px;
+    border-radius: 18px;
+    align-items: center;
+    gap: 150px;
+}
+/* run section end  */
 
 /* mobile screen responsive design here  */
 @media screen and (max-width: 576px) {
@@ -172,15 +223,40 @@ header{
     .tabContainer{
         border: none;
     }
-    .listContainer{
+    .listContainer, .club{
         display: none;
     }
     .nav-menu{
         display: block;
     }
 
-    .heroSection{
+    .heroSection, .habitCardContainer{
         grid-template-columns: repeat(1, 1fr);
         align-items: center;
+        justify-content: center;
+    }
+
+    .third-btn{
+        margin-left: 5px;
+    }
+
+    .common-btn{
+        padding: 16px 32px;
+    }
+    .imgTitleBox-position1{
+        right: 0;
+        top: -50px;
+    }
+    .imgTitleBox-position2{
+        bottom: 100px;
+    }
+    .run-section{
+        padding: 32px;
+        flex-direction: column;
+        gap: 30px;
+        justify-content: center;
+    }
+    .btn-width, .img-width{
+        width: 100%;
     }
 }

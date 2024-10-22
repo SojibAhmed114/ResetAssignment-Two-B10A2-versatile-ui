@@ -10,10 +10,11 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Fleur+De+Leah&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
     <!-- css file linked here  -->
-     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
+        <div class="problem">
         <nav class="mainNav display-flex">
             <h2 class="nav-title">Fitness</h2>
             <div class="tabContainer">
@@ -32,8 +33,10 @@
             <div class="heroTitleContainer">
                 <h1 class="heroTitle">Get body in <span class="heroTitelDesign">shape</span> & stay healthy</h1>
                 <p class="section-description ">A huge selection of health and fitness content, healthy recipes and transformation stories to help you get fit and stay fit!</p>
-                <button class="common-btn">Join Club Now</button>
-                <button class="common-btn third-btn">Download App</button>
+                <div>
+                    <button class="common-btn">Join <span class="club">Club</span> Now</button>
+                    <button class="common-btn third-btn">Download App</button>
+                </div>
             </div>
 
             <div class="heroImgContainer">
@@ -52,11 +55,55 @@
                     </div>
                 </div> 
             </div>
-         </section>
+        </section>
         <!-- hero section end here  -->
+    </div>
     </header>
 
     <main>
+        <!-- habit section start here  -->
+        <section class="habit-section">
+            <div class="habitContent">
+                <h2 class="section-title">Change Your Habits</h2>
+                <p class="section-description">We believe fitness should be accessible to everyone, everywhere, regardless of income or access to a gym.</p>
+            </div>
+
+            <div class="habitCardContainer">
+                <div class="habitCardContent">
+                    <img class="habit-img" src="./assets/image-3.png" alt="gym photo">
+                    <h1 class="card-title">Movement</h1>
+                    <p class="section-description">We believe fitness should be accessible to everyone</p>
+                </div>
+
+                <div class="habitCardContent">
+                    <img class="habit-img" src="./assets/image-2.png" alt="gym photo">
+                    <h1 class="card-title">Time</h1>
+                    <p class="section-description">We believe fitness should be accessible to everyone</p>
+                </div>
+                <div class="habitCardContent">
+                    <img class="habit-img" src="./assets/image-4.png" alt="gym photo">
+                    <h1 class="card-title">Practice</h1>
+                    <p class="section-description">We believe fitness should be accessible to everyone</p>
+                </div>
+                <div class="habitCardContent">
+                    <img class="habit-img" src="./assets/image-5.png" alt="gym photo">
+                    <h1 class="card-title">Weight Loss</h1>
+                    <p class="section-description">We believe fitness should be accessible to everyone</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- run section start here  -->
+        <section class="run-section habit-section display-flex">
+        <div>
+            <h2 class="section-title">Run an Extra  <br>
+                Mile Easily</h2>
+            <p class="section-description">We believe fitness should be accessible to everyone, everywhere, regardless of income or access to a gym. With hundreds of professional workouts.</p>
+            <button class="common-btn btn-width">Join Now</button>
+        </div>
+        <img class="img-width" src="./assets/Rectangle.png" alt="run photo">
+        </section>
+        <!-- run section end here  -->
 
     </main>
 
