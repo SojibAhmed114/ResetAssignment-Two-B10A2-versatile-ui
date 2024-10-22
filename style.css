@@ -210,6 +210,44 @@ header{
 }
 /* run section end  */
 
+/* my unique section here  */
+.uniqueSection{
+    padding: 50px 0;
+    background-color: #00000073;
+    background-blend-mode: overlay;
+    background-image: url("./assets/gymbg.jpg");
+    background-size: cover;
+    background-position: center;
+    clip-path: polygon(50% 0%, 100% 6%, 100% 94%, 50% 100%, 0 93%, 0 6%);
+}
+.uniqueSectionContainer{
+    max-width: 1070px;
+    margin: 50px auto;
+    padding: 0 5px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    
+}
+
+.priceCard{
+    color: rgb(186, 186, 186);
+    padding: 30px 20px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 12px;
+}
+.textBorder{
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+    border-bottom: 1px solid rgb(229, 229, 229);
+}
+.priceTitle{
+    color:#ffffff;
+    font-size: 2rem;
+}
+
 /* bmi section start here  */
 .bmi-title-section{
     text-align: left;
@@ -379,8 +417,8 @@ footer{
 
     .heroSection,
     .habitCardContainer,
-    .meetPhotoContaier
-    {
+    .meetPhotoContaier,
+    .uniqueSectionContainer{
         grid-template-columns: repeat(1, 1fr);
     }
 
@@ -419,5 +457,8 @@ footer{
         flex-direction: column;
     }
 
+    .uniqueSection{
+        padding: 100px 0;
+    }
 
 }
